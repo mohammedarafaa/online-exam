@@ -1,0 +1,141 @@
+{
+    "lang": {
+    "english": "English",
+    "arabic": "Arabic"
+  },
+  "auth": {
+    "signin": "Sign In",
+    "register": "Register"
+  },
+  "signIn": {
+    "title": "Sign In",
+    "welcome": "Welcome to Elevate",
+    "emailPlaceholder": "Enter your email",
+    "passwordPlaceholder": "Enter your password",
+    "button": "Log In",
+    "forgotPassword": "Forgot your password?"
+  },
+  "signUp": {
+    "title": "Sign Up",
+    "welcome": "Welcome to Elevate",
+    "emailPlaceholder": "Enter your email",
+    "passwordPlaceholder": "Enter your password",
+    "confirmPasswordPlaceholder": "Confirm your password",
+    "button": "Register"
+  },
+  "forgotPassword": {
+    "title": "Forgot your password?",
+    "welcome": "Welcome to Elevate",
+    "emailPlaceholder": "Enter your email",
+    "button": "Send Reset Link"
+  },
+  "verifyCode": {
+    "title": "Verify Code",
+    "welcome": "Welcome to Elevate",
+    "codePlaceholder": "Enter verification code",
+    "button": "Verify"
+  },
+  "setPassword": {
+    "title": "Set a password",
+    "welcome": "Welcome to Elevate",
+    "passwordPlaceholder": "Enter new password",
+    "confirmPasswordPlaceholder": "Confirm new password",
+    "button": "Set Password"
+  },
+  "dashboard": {
+    "title": "Dashboard"
+  },
+  "selectDiploma": {
+    "title": "Select Diploma"
+  },
+  "results": {
+    "title": "Results"
+  },
+  "quizHistory": {
+    "title": "Quiz History"
+  },
+  "answerQuiz": {
+    "title": "Answer Quiz"
+  },
+  "subject": {
+    "active": "Active",
+    "description": "Comprehensive assessment covering key concepts and practical applications"
+  },
+  "notFound": {
+    "title": "Oops! Page Not Found.",
+    "message": "You must have picked the wrong door because I haven't been able to lay my eye on the page you've been searching for."
+  },
+  "examSummary": {
+    "review": "Exam Review",
+    "needAttention": "Questions that need your attention",
+    "incorrect": "Incorrect",
+    "reviewing": "Reviewing {{count}} questions that need improvement.",
+    "question": "Question"
+  },
+  "examScore": {
+    "excellent": "Excellent Work!",
+    "summary": "Here is your exam performance summary.",
+    "close": "Close",
+    "reviewAnswers": "Review Answers"
+  },
+  "timeEnd": {
+    "ended": "The exam time has ended.",
+    "showReview": "Show Exam Review"
+  },
+  "brand": {
+    "title": "Elevate Exam App",
+    "subtitle": "Your path to success"
+  },
+  "welcome": {
+    "title": "Welcome to Elevate!",
+    "description": "Start your learning journey with us.",
+    "cta": "Get Started"
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "logout": "Log Out",
+    "copyright": "Your App"
+  },
+  "examCard": {
+    "questions": "Questions",
+    "minutes": "Minutes",
+    "available": "Available",
+    "startExam": "Start Exam"
+  },
+  "examContainer": {
+    "noExams": "No Exams Available",
+    "noExamsDesc": "There are currently no exams available for this subject.",
+    "checkBack": "Check back later or explore other subjects.",
+    "backToDashboard": "Back to Dashboard"
+  },
+  "register": {
+    "usernameRequired": "Username is required",
+    "usernamePattern": "Username must start with a letter, 6-21 characters, letters/numbers/underscore only",
+    "firstNameRequired": "First name is required",
+    "firstNamePattern": "First name must start with a capital letter, 3-20 characters",
+    "lastNameRequired": "Last name is required",
+    "lastNamePattern": "Last name must start with a capital letter, 3-20 characters",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email address",
+    "passwordRequired": "Password is required",
+    "passwordPattern": "Password must contain at least 8 characters, one uppercase, one number, and one special character",
+    "confirmPasswordRequired": "Confirm password is required",
+    "phoneRequired": "Phone number is required",
+    "phonePattern": "Phone must be Egyptian number format (01X XXXXXXXX)",
+    "invalidInput": "Invalid input"
+  },
+  "examQuestions": {
+    "questionOf": "Question {{current}} of {{total}}",
+    "completed": "completed",
+    "timeRemaining": "Time Remaining",
+    "progress": "Progress"
+  },
+  "features": {
+    "comprehensive": "Comprehensive coverage for all subjects",
+    "realtime": "Real-time results and analytics",
+    "analytics": "Advanced performance analytics"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

@@ -1,0 +1,71 @@
+<!-- Wrapper عشان يمشي بعد الـ Sidebar -->
+<div class="sm:ml-64 p-4 sm:p-6 md:p-8 space-y-6 animate-fade-in-up transition-all duration-500">
+
+  <!-- Exam Card -->
+  <section
+    class="group relative overflow-hidden rounded-3xl bg-white border border-gray-100 hover:border-blue-200 shadow-md hover:shadow-xl transition-all duration-300"
+  >
+    <!-- Hover Gradient -->
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+    <div class="relative p-4 sm:p-6 md:p-8">
+      <!-- Header -->
+      <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-6 gap-6">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-4 sm:space-y-0">
+          <!-- Icon -->
+          <div class="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center shadow-lg">
+            <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+
+          <!-- Exam Details -->
+          <div class="flex-1 min-w-[180px]">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-200">
+              {{ exam().title }}
+            </h2>
+            <div class="flex flex-wrap items-center gap-4 text-sm text-gray-600">
+              <span class="flex items-center">
+                <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                {{ exam().numberOfQuestions }} {{ 'examCard.questions' | translate }}
+              </span>
+              <span class="flex items-center">
+                <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 6v6l4 2m6-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                {{ exam().duration }} {{ 'examCard.minutes' | translate }}
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Status -->
+        <div class="flex flex-col items-center sm:items-end space-y-3">
+          <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800 animate-bounce-in">
+            {{ 'examCard.available' | translate }}
+          </span>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="flex justify-center sm:justify-end">
+        <button
+          (click)="startExam(); loadQuestions(exam()._id)"
+          class="relative px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-extrabold rounded-3xl shadow-md hover:shadow-lg transition-all duration-300 focus:ring-4 focus:ring-blue-200"
+        >
+          <span class="flex items-center gap-2">
+            {{ 'examCard.startExam' | translate }}
+            <svg class="w-5 h-5 ml-2 transition-transform group-hover/btn:translate-x-1" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+</div>

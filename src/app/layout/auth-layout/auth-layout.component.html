@@ -1,0 +1,207 @@
+<!-- Main Authentication Container -->
+<main class="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden">
+  <!-- Background Decorative Elements -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none select-none">
+    <!-- Subtle geometric patterns -->
+    <div class="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-100/30 to-purple-100/20 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-blue-50/40 to-indigo-100/30 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="relative z-10 min-h-screen flex overflow-hidden" style="overflow-y:hidden;">
+    <!-- Left Section - Brand & Welcome (Desktop Only) -->
+    <section class="hidden lg:flex lg:w-1/2 relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
+      <!-- Background Pattern -->
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20"></div>
+        <!-- Subtle grid pattern -->
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0); background-size: 40px 40px;"></div>
+      </div>
+
+      <!-- Content Container -->
+      <div class="relative z-10 flex flex-col justify-center px-16 py-20 text-white">
+        <!-- Brand Logo Area -->
+        <div class="mb-12">
+          <div class="flex items-center space-x-4 mb-8">
+            <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-500 rounded-2xl flex items-center justify-center shadow-lg">
+              <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h1 class="text-2xl font-bold">{{ 'brand.title' | translate }}</h1>
+              <p class="text-blue-200 text-sm">{{ 'brand.subtitle' | translate }}</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Welcome Content -->
+        <div class="max-w-lg">
+          <h2 class="text-5xl font-bold leading-tight mb-6">
+            {{ 'welcome.title' | translate }}
+            <span class="block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+              {{ 'brand.title' | translate }}
+            </span>
+          </h2>
+
+          <p class="text-xl text-gray-300 leading-relaxed mb-12">
+            {{ 'welcome.description' | translate }}
+            <span class="block mt-2 text-blue-200">
+              {{ 'welcome.cta' | translate }}
+            </span>
+          </p>
+
+          <!-- Feature Highlights -->
+          <div class="space-y-4 mb-12">
+            <div class="flex items-center space-x-3">
+              <div class="w-8 h-8 bg-blue-500/20 rounded-full flex items-center justify-center">
+                <svg class="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+              </div>
+              <span class="text-gray-300">{{ 'features.comprehensive' | translate }}</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-8 h-8 bg-blue-500/20 rounded-full flex items-center justify-center">
+                <svg class="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+              </div>
+              <span class="text-gray-300">{{ 'features.realtime' | translate }}</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-8 h-8 bg-blue-500/20 rounded-full flex items-center justify-center">
+                <svg class="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+              </div>
+              <span class="text-gray-300">{{ 'features.analytics' | translate }}</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Decorative Illustration Area -->
+        <div class="mt-auto flex justify-center">
+          <div class="relative">
+            <!-- Modern illustration placeholder -->
+            <div class="w-80 h-80 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-3xl flex items-center justify-center backdrop-blur-sm border border-white/10">
+              <div class="text-center">
+                <!-- You can replace this with your actual illustration -->
+                <img
+                  src="/20944338.jpg"
+                  alt="Learning illustration"
+                  class="w-full h-full object-contain opacity-90"
+                />
+              </div>
+            </div>
+
+            <!-- Floating elements for visual interest -->
+            <div class="absolute -top-4 -right-4 w-8 h-8 bg-blue-400/30 rounded-full animate-pulse"></div>
+            <div class="absolute -bottom-4 -left-4 w-6 h-6 bg-purple-400/30 rounded-full animate-pulse delay-300"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decorative Corner Elements -->
+      <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-blue-500/10 to-transparent"></div>
+      <div class="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-blue-500/10 to-transparent"></div>
+    </section>
+
+    <!-- Right Section - Authentication Forms -->
+    <section class="flex lg:w-1/2 w-full flex-col relative overflow-hidden">
+      <!-- Mobile Header (Mobile Only) -->
+      <div class="lg:hidden bg-white border-b border-gray-100 px-6 py-4">
+        <div class="flex items-center justify-center">
+          <div class="flex items-center space-x-3">
+            <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h1 class="text-xl font-bold text-gray-900">{{ 'brand.title' | translate }}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Bar -->
+      <nav class="bg-white/80 backdrop-blur-sm border-b border-gray-100 px-8 py-6">
+        <div class="flex justify-center lg:justify-end">
+          <ul class="flex whitespace-nowrap items-center space-x-8">
+            <!-- Language Selector -->
+<li class="relative group">
+  <button
+    class="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors duration-200 focus:outline-none"
+    [attr.aria-expanded]="dropdownOpen ? 'true' : 'false'"
+    (click)="dropdownOpen = !dropdownOpen"
+    type="button"
+  >
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+    </svg>
+    <span class="font-medium">{{ currentLang === 'en' ? ('lang.english' | translate) : ('lang.arabic' | translate) }}</span>
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+  <!-- Dropdown -->
+  <ul
+    *ngIf="dropdownOpen"
+    class="absolute top-full mt-2 w-36 bg-white border border-gray-200 rounded-xl shadow-lg z-50"
+  >
+    <li>
+      <button (click)="switchLang('en'); dropdownOpen = false;" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600 rounded-t-xl">
+        {{ 'lang.english' | translate }}
+      </button>
+    </li>
+    <li>
+      <button (click)="switchLang('ar'); dropdownOpen = false;" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600 rounded-b-xl">
+        {{ 'lang.arabic' | translate }}
+      </button>
+    </li>
+  </ul>
+</li>
+
+
+            <!-- Auth Navigation -->
+            <li>
+              <a
+                routerLink="login"
+                routerLinkActive="text-blue-600 font-semibold"
+                class="text-blue-600 hover:text-blue-700 font-semibold transition-colors duration-200"
+              >
+                {{ 'auth.signin' | translate }}
+              </a>
+            </li>
+            <li>
+              <a
+                routerLink="register"
+                routerLinkActive="bg-blue-50 border-blue-200 text-blue-700"
+                class="px-6 py-2.5 border border-gray-200 hover:border-blue-200 text-gray-700 hover:text-blue-700 font-medium rounded-xl transition-all duration-200 hover:bg-blue-50"
+              >
+                {{ 'auth.register' | translate }}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Form Container -->
+      <div class="flex-1 flex items-center justify-center px-8 py-12 bg-gradient-to-br from-white to-gray-50/50">
+        <div class="w-full max-w-md">
+          <!-- Form content will be injected here via router-outlet -->
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="bg-white border-t border-gray-100 px-8 py-6">
+        <div class="text-center">
+          <p class="text-sm text-gray-500">
+            © 2025 {{ 'brand.title' | translate }}. {{ 'footer.rights' | translate }}
+          </p>
+        </div>
+      </footer>
+    </section>
+  </div>
+</main>

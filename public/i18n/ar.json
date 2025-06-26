@@ -1,0 +1,141 @@
+{
+    "lang": {
+    "english": "الإنجليزية",
+    "arabic": "العربية"
+  },
+  "auth": {
+    "signin": "تسجيل الدخول",
+    "register": "تسجيل"
+  },
+  "signIn": {
+    "title": "تسجيل الدخول",
+    "welcome": "مرحبًا بك في إيلفيت",
+    "emailPlaceholder": "أدخل بريدك الإلكتروني",
+    "passwordPlaceholder": "أدخل كلمة المرور",
+    "button": "تسجيل الدخول",
+    "forgotPassword": "هل نسيت كلمة المرور؟"
+  },
+  "signUp": {
+    "title": "تسجيل جديد",
+    "welcome": "مرحبًا بك في إيلفيت",
+    "emailPlaceholder": "أدخل بريدك الإلكتروني",
+    "passwordPlaceholder": "أدخل كلمة المرور",
+    "confirmPasswordPlaceholder": "تأكيد كلمة المرور",
+    "button": "تسجيل"
+  },
+  "forgotPassword": {
+    "title": "هل نسيت كلمة المرور؟",
+    "welcome": "مرحبًا بك في إيلفيت",
+    "emailPlaceholder": "أدخل بريدك الإلكتروني",
+    "button": "إرسال رابط إعادة التعيين"
+  },
+  "verifyCode": {
+    "title": "تحقق من الرمز",
+    "welcome": "مرحبًا بك في إيلفيت",
+    "codePlaceholder": "أدخل رمز التحقق",
+    "button": "تحقق"
+  },
+  "setPassword": {
+    "title": "تعيين كلمة مرور",
+    "welcome": "مرحبًا بك في إيلفيت",
+    "passwordPlaceholder": "أدخل كلمة المرور الجديدة",
+    "confirmPasswordPlaceholder": "تأكيد كلمة المرور الجديدة",
+    "button": "تعيين كلمة المرور"
+  },
+  "dashboard": {
+    "title": "لوحة التحكم"
+  },
+  "selectDiploma": {
+    "title": "اختر الدبلوم"
+  },
+  "results": {
+    "title": "النتائج"
+  },
+  "quizHistory": {
+    "title": "تاريخ الاختبارات"
+  },
+  "answerQuiz": {
+    "title": "أجب على الاختبار"
+  },
+  "subject": {
+    "active": "نشط",
+    "description": "تقييم شامل يغطي المفاهيم الرئيسية والتطبيقات العملية"
+  },
+  "notFound": {
+    "title": "عذراً! الصفحة غير موجودة.",
+    "message": "يبدو أنك اخترت الباب الخطأ لأنني لم أتمكن من العثور على الصفحة التي تبحث عنها."
+  },
+  "examSummary": {
+    "review": "مراجعة الامتحان",
+    "needAttention": "الأسئلة التي تحتاج إلى انتباهك",
+    "incorrect": "إجابة خاطئة",
+    "reviewing": "مراجعة {{count}} سؤال يحتاج إلى تحسين.",
+    "question": "سؤال"
+  },
+  "examScore": {
+    "excellent": "عمل ممتاز!",
+    "summary": "إليك ملخص أدائك في الامتحان.",
+    "close": "إغلاق",
+    "reviewAnswers": "مراجعة الإجابات"
+  },
+  "timeEnd": {
+    "ended": "انتهى وقت الامتحان.",
+    "showReview": "عرض مراجعة الامتحان"
+  },
+  "brand": {
+    "title": "تطبيق إيليفيت للامتحانات",
+    "subtitle": "طريقك إلى النجاح"
+  },
+  "welcome": {
+    "title": "مرحبًا بك في إيليفيت!",
+    "description": "ابدأ رحلتك التعليمية معنا.",
+    "cta": "ابدأ الآن"
+  },
+  "sidebar": {
+    "dashboard": "لوحة التحكم",
+    "logout": "تسجيل الخروج",
+    "copyright": "تطبيقك"
+  },
+  "examCard": {
+    "questions": "أسئلة",
+    "minutes": "دقائق",
+    "available": "متاح",
+    "startExam": "ابدأ الامتحان"
+  },
+  "examContainer": {
+    "noExams": "لا توجد اختبارات متاحة",
+    "noExamsDesc": "لا توجد اختبارات متاحة حاليًا لهذا الموضوع.",
+    "checkBack": "تحقق مرة أخرى لاحقًا أو استكشف مواضيع أخرى.",
+    "backToDashboard": "العودة إلى لوحة التحكم"
+  },
+  "register": {
+    "usernameRequired": "اسم المستخدم مطلوب",
+    "usernamePattern": "يجب أن يبدأ اسم المستخدم بحرف، من 6 إلى 21 حرفًا، أحرف/أرقام/شرطة سفلية فقط",
+    "firstNameRequired": "الاسم الأول مطلوب",
+    "firstNamePattern": "يجب أن يبدأ الاسم الأول بحرف كبير، من 3 إلى 20 حرفًا",
+    "lastNameRequired": "اسم العائلة مطلوب",
+    "lastNamePattern": "يجب أن يبدأ اسم العائلة بحرف كبير، من 3 إلى 20 حرفًا",
+    "emailRequired": "البريد الإلكتروني مطلوب",
+    "emailInvalid": "يرجى إدخال بريد إلكتروني صحيح",
+    "passwordRequired": "كلمة المرور مطلوبة",
+    "passwordPattern": "يجب أن تحتوي كلمة المرور على 8 أحرف على الأقل، وحرف كبير واحد، ورقم واحد، وحرف خاص واحد",
+    "confirmPasswordRequired": "تأكيد كلمة المرور مطلوب",
+    "phoneRequired": "رقم الهاتف مطلوب",
+    "phonePattern": "يجب أن يكون رقم الهاتف مصري (01X XXXXXXXX)",
+    "invalidInput": "إدخال غير صالح"
+  },
+  "examQuestions": {
+    "questionOf": "سؤال {{current}} من {{total}}",
+    "completed": "مكتمل",
+    "timeRemaining": "الوقت المتبقي",
+    "progress": "التقدم"
+  },
+  "features": {
+    "comprehensive": "تغطية شاملة لجميع المواد",
+    "realtime": "نتائج فورية وتحليلات",
+    "analytics": "تحليلات متقدمة للأداء"
+  },
+  "footer": {
+    "rights": "جميع الحقوق محفوظة."
+  }
+}

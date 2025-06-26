@@ -1,0 +1,24 @@
+/* Remove the old CSS classes and use the Tailwind classes in the HTML above */
+
+/* Optional: Custom animations for enhanced UX */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Optional: Enhanced focus states */
+.focus-visible:focus {
+  outline: 2px solid #3B82F6;
+  outline-offset: 2px;
+}
+

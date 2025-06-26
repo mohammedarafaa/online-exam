@@ -1,0 +1,13 @@
+<!-- Modern Dashboard Container -->
+<section class="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 sm:ml-64">
+
+
+  <!-- Quiz Grid -->
+  <div class="p-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      @for (subjectItem of allSubjects(); track subjectItem._id) {
+        <app-subject-card [subject]="subjectItem"></app-subject-card>
+      }
+    </div>
+  </div>
+</section>
