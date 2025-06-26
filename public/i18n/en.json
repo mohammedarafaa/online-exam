@@ -8,6 +8,7 @@
     "register": "Register"
   },
   "signIn": {
+
     "title": "Sign In",
     "welcome": "Welcome to Elevate",
     "emailPlaceholder": "Enter your email",
@@ -15,14 +16,18 @@
     "button": "Log In",
     "forgotPassword": "Forgot your password?"
   },
-  "signUp": {
-    "title": "Sign Up",
-    "welcome": "Welcome to Elevate",
-    "emailPlaceholder": "Enter your email",
-    "passwordPlaceholder": "Enter your password",
-    "confirmPasswordPlaceholder": "Confirm your password",
-    "button": "Register"
-  },
+"signUp": {
+  "usernamePlaceholder": "Enter your username",
+  "firstNamePlaceholder": "Enter your first name",
+  "lastNamePlaceholder": "Enter your last name",
+  "emailPlaceholder": "Enter your email",
+  "passwordPlaceholder": "Enter your password",
+  "confirmPasswordPlaceholder": "Confirm your password",
+  "phonePlaceholder": "Enter your phone number",
+  "button": "Register",
+  "title": "Sign Up",
+  "welcome": "Welcome to Elevate"
+},
   "forgotPassword": {
     "title": "Forgot your password?",
     "welcome": "Welcome to Elevate",
@@ -108,22 +113,23 @@
     "checkBack": "Check back later or explore other subjects.",
     "backToDashboard": "Back to Dashboard"
   },
-  "register": {
-    "usernameRequired": "Username is required",
-    "usernamePattern": "Username must start with a letter, 6-21 characters, letters/numbers/underscore only",
-    "firstNameRequired": "First name is required",
-    "firstNamePattern": "First name must start with a capital letter, 3-20 characters",
-    "lastNameRequired": "Last name is required",
-    "lastNamePattern": "Last name must start with a capital letter, 3-20 characters",
-    "emailRequired": "Email is required",
-    "emailInvalid": "Please enter a valid email address",
-    "passwordRequired": "Password is required",
-    "passwordPattern": "Password must contain at least 8 characters, one uppercase, one number, and one special character",
-    "confirmPasswordRequired": "Confirm password is required",
-    "phoneRequired": "Phone number is required",
-    "phonePattern": "Phone must be Egyptian number format (01X XXXXXXXX)",
-    "invalidInput": "Invalid input"
-  },
+"register": {
+  "usernameRequired": "Username is required",
+  "usernamePattern": "Username must start with a letter and be 6-21 characters",
+  "firstNameRequired": "First name is required",
+  "firstNamePattern": "First name must start with a capital letter",
+  "lastNameRequired": "Last name is required",
+  "lastNamePattern": "Last name must start with a capital letter",
+  "emailRequired": "Email is required",
+  "emailInvalid": "Invalid email address",
+  "passwordRequired": "Password is required",
+  "passwordPattern": "Password must be at least 8 characters, include an uppercase letter, a number, and a special character",
+  "confirmPasswordRequired": "Confirm password is required",
+  "phoneRequired": "Phone number is required",
+  "phonePattern": "Phone number must be a valid Egyptian mobile number",
+  "invalidInput": "Invalid input",
+  "passwordMismatch": "Passwords do not match"
+},
   "examQuestions": {
     "questionOf": "Question {{current}} of {{total}}",
     "completed": "completed",

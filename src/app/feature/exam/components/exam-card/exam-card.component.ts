@@ -8,7 +8,7 @@ import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-exam-card',
-  imports: [RouterLink, TranslateModule],
+  imports: [ TranslateModule],
   templateUrl: './exam-card.component.html',
   styleUrl: './exam-card.component.scss',
 })

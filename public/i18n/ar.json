@@ -16,13 +16,18 @@
     "forgotPassword": "هل نسيت كلمة المرور؟"
   },
   "signUp": {
-    "title": "تسجيل جديد",
-    "welcome": "مرحبًا بك في إيلفيت",
-    "emailPlaceholder": "أدخل بريدك الإلكتروني",
-    "passwordPlaceholder": "أدخل كلمة المرور",
-    "confirmPasswordPlaceholder": "تأكيد كلمة المرور",
-    "button": "تسجيل"
-  },
+  "usernamePlaceholder": "أدخل اسم المستخدم",
+  "firstNamePlaceholder": "أدخل الاسم الأول",
+  "lastNamePlaceholder": "أدخل اسم العائلة",
+  "emailPlaceholder": "أدخل بريدك الإلكتروني",
+  "passwordPlaceholder": "أدخل كلمة المرور",
+  "confirmPasswordPlaceholder": "تأكيد كلمة المرور",
+  "phonePlaceholder": "أدخل رقم هاتفك",
+  "button": "تسجيل",
+  "title": "تسجيل جديد",
+  "welcome": "مرحبًا بك في إيلفيت"
+}
+,
   "forgotPassword": {
     "title": "هل نسيت كلمة المرور؟",
     "welcome": "مرحبًا بك في إيلفيت",
@@ -108,22 +113,23 @@
     "checkBack": "تحقق مرة أخرى لاحقًا أو استكشف مواضيع أخرى.",
     "backToDashboard": "العودة إلى لوحة التحكم"
   },
-  "register": {
-    "usernameRequired": "اسم المستخدم مطلوب",
-    "usernamePattern": "يجب أن يبدأ اسم المستخدم بحرف، من 6 إلى 21 حرفًا، أحرف/أرقام/شرطة سفلية فقط",
-    "firstNameRequired": "الاسم الأول مطلوب",
-    "firstNamePattern": "يجب أن يبدأ الاسم الأول بحرف كبير، من 3 إلى 20 حرفًا",
-    "lastNameRequired": "اسم العائلة مطلوب",
-    "lastNamePattern": "يجب أن يبدأ اسم العائلة بحرف كبير، من 3 إلى 20 حرفًا",
-    "emailRequired": "البريد الإلكتروني مطلوب",
-    "emailInvalid": "يرجى إدخال بريد إلكتروني صحيح",
-    "passwordRequired": "كلمة المرور مطلوبة",
-    "passwordPattern": "يجب أن تحتوي كلمة المرور على 8 أحرف على الأقل، وحرف كبير واحد، ورقم واحد، وحرف خاص واحد",
-    "confirmPasswordRequired": "تأكيد كلمة المرور مطلوب",
-    "phoneRequired": "رقم الهاتف مطلوب",
-    "phonePattern": "يجب أن يكون رقم الهاتف مصري (01X XXXXXXXX)",
-    "invalidInput": "إدخال غير صالح"
-  },
+"register": {
+  "usernameRequired": "اسم المستخدم مطلوب",
+  "usernamePattern": "يجب أن يبدأ اسم المستخدم بحرف ويكون من 6 إلى 21 حرفًا",
+  "firstNameRequired": "الاسم الأول مطلوب",
+  "firstNamePattern": "يجب أن يبدأ الاسم الأول بحرف كبير",
+  "lastNameRequired": "اسم العائلة مطلوب",
+  "lastNamePattern": "يجب أن يبدأ اسم العائلة بحرف كبير",
+  "emailRequired": "البريد الإلكتروني مطلوب",
+  "emailInvalid": "البريد الإلكتروني غير صالح",
+  "passwordRequired": "كلمة المرور مطلوبة",
+  "passwordPattern": "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل وتحتوي على حرف كبير ورقم ورمز خاص",
+  "confirmPasswordRequired": "تأكيد كلمة المرور مطلوب",
+  "phoneRequired": "رقم الهاتف مطلوب",
+  "phonePattern": "يجب أن يكون رقم الهاتف رقم محمول مصري صحيح",
+  "invalidInput": "إدخال غير صالح",
+  "passwordMismatch": "كلمتا المرور غير متطابقتين"
+},
   "examQuestions": {
     "questionOf": "سؤال {{current}} من {{total}}",
     "completed": "مكتمل",

@@ -1,18 +1,19 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, inject, signal, AfterViewInit, OnDestroy } from '@angular/core';
 import { ChartData, ChartType } from 'chart.js';
-import { NgChartsModule } from 'ng2-charts';
+import { BaseChartDirective } from 'ng2-charts';
 import * as QuestionSelectors from '@questionStore/question.selectors';
 import * as QuestionActions from '@questionStore/question.actions';
 import * as ExamActions from '@examStore/exam.actions';
 import { Store } from '@ngrx/store';
 import { TranslateModule } from '@ngx-translate/core';
+
 @Component({
   selector: 'app-exam-score',
-  imports: [NgChartsModule, TranslateModule],
+  imports: [BaseChartDirective, TranslateModule], 
   templateUrl: './exam-score.component.html',
   styleUrl: './exam-score.component.scss',
 })
-export class ExamScoreComponent {
+export class ExamScoreComponent implements AfterViewInit, OnDestroy {
   doughnutChartLabels: string[] = [] as string[];
   doughnutChartData!: ChartData<'doughnut'>;
   doughnutChartType: ChartType = 'doughnut';

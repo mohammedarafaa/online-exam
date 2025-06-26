@@ -19,7 +19,7 @@ import { AuthBtnComponent } from '../../../../shared/auth-btn/auth-btn.component
 
 @Component({
   selector: 'app-forgetpassword',
-  imports: [ReactiveFormsModule, RouterLink, TranslateModule],
+  imports: [ReactiveFormsModule, RouterLink, TranslateModule, AuthBtnComponent],
   templateUrl: './forget-password.component.html',
   styleUrl: './forget-password.component.scss',
 })

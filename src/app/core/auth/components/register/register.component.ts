@@ -9,13 +9,14 @@ import {
   Validators,
 } from '@angular/forms';
 import { AuthusecaseService } from './../../domain/auth.usecase.';
-import { Router, RouterLink } from '@angular/router';
+import { Router} from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { AuthBtnComponent } from "../../../../shared/auth-btn/auth-btn.component";
 
 @Component({
   selector: 'app-register',
-  imports: [ReactiveFormsModule, RouterLink, CommonModule, TranslateModule],
+  imports: [ReactiveFormsModule, CommonModule, TranslateModule, AuthBtnComponent],
   templateUrl: './register.component.html',
   styleUrl: './register.component.scss',
 })
@@ -30,63 +31,76 @@ export class RegisterComponent implements OnInit {
   public validationMessages: { [key: string]: { [key: string]: string } } = {
     username: {
       required: 'register.usernameRequired',
-      pattern: 'register.usernamePattern'
+      pattern: 'register.usernamePattern',
     },
     firstName: {
       required: 'register.firstNameRequired',
-      pattern: 'register.firstNamePattern'
+      pattern: 'register.firstNamePattern',
     },
     lastName: {
       required: 'register.lastNameRequired',
-      pattern: 'register.lastNamePattern'
+      pattern: 'register.lastNamePattern',
     },
     email: {
       required: 'register.emailRequired',
-      email: 'register.emailInvalid'
+      email: 'register.emailInvalid',
     },
     password: {
       required: 'register.passwordRequired',
-      pattern: 'register.passwordPattern'
+      pattern: 'register.passwordPattern',
     },
     rePassword: {
       required: 'register.confirmPasswordRequired',
-      pattern: 'register.passwordPattern'
+      pattern: 'register.passwordPattern',
     },
     phone: {
       required: 'register.phoneRequired',
-      pattern: 'register.phonePattern'
-    }
+      pattern: 'register.phonePattern',
+    },
   };
 
   ngOnInit(): void {
+    this.initForm();
+  }
+  // ...existing code...
+  initForm() {
     this.registerForm = this.fb.group(
       {
         username: [
           null,
           [
             Validators.required,
-            Validators.pattern(/^[a-zA-Z][a-zA-Z0-9_]{5,20}$/),
+            Validators.pattern(/^[a-zA-Z][a-zA-Z0-9_]{5,20}$/), // e.g., elevate11233
           ],
         ],
         firstName: [
           null,
-          [Validators.required, Validators.pattern(/^[A-Z][a-z]{2,19}$/)],
+          [
+            Validators.required,
+            Validators.pattern(/^[A-Z][a-z]{2,19}$/), // e.g., Elevate
+          ],
         ],
         lastName: [
           null,
           [
             Validators.required,
-            Validators.pattern(/^[A-Z][a-z]{2,19}$/),
+            Validators.pattern(/^[A-Z][a-z]{2,19}$/), // e.g., Tech
           ],
         ],
-        email: [null, [Validators.required, Validators.email]],
+        email: [
+          null,
+          [
+            Validators.required,
+            Validators.email, // e.g., admin133@1elevate.com
+          ],
+        ],
         password: [
           null,
           [
             Validators.required,
             Validators.pattern(
               /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+=-]).{8,}$/
-            ),
+            ), // e.g., Elevate@123
           ],
         ],
         rePassword: [
@@ -102,13 +116,14 @@ export class RegisterComponent implements OnInit {
           null,
           [
             Validators.required,
-            Validators.pattern(/^01[0125][0-9]{8}$/),
+            Validators.pattern(/^01[0125][0-9]{8}$/), // e.g., 01094155711
           ],
         ],
       },
       { validator: this.confirmPassword }
     );
   }
+  // ...existing code...
 
   confirmPassword(group: AbstractControl): ValidationErrors | null {
     const password = group.get('password')?.value;
@@ -138,11 +153,14 @@ export class RegisterComponent implements OnInit {
 
   // Helper method to check password mismatch
   hasPasswordMismatch(): boolean {
-    return !!(this.registerForm.errors?.['misMatched'] &&
-             this.registerForm.get('rePassword')?.touched);
+    return !!(
+      this.registerForm.errors?.['misMatched'] &&
+      this.registerForm.get('rePassword')?.touched
+    );
   }
 
   registerSubmit() {
+    console.log(this.registerForm.value)
     if (this.registerForm.valid) {
       this.authUseCase.excuteRegister(this.registerForm.value).subscribe({
         next: (res) => {

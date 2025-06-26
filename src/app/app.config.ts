@@ -1,7 +1,7 @@
 import { ApplicationConfig, importProvidersFrom, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { NgxSpinnerModule } from "ngx-spinner";
-import { NgChartsModule } from 'ng2-charts';
+import { provideCharts, withDefaultRegisterables } from 'ng2-charts';
 import { routes } from './app.routes';
 import {
   provideClientHydration,
@@ -40,7 +40,7 @@ export const appConfig: ApplicationConfig = {
      provideAnimations(),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
-    importProvidersFrom(NgChartsModule),
+     provideCharts(withDefaultRegisterables()),
     provideClientHydration(withEventReplay()),
     provideStore({
       exam:examReducer,

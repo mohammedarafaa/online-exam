@@ -17,10 +17,7 @@ export class AuthusecaseService {
     );
   }
   excuteRegister(data: object): Observable<any> {
-    return this._authRepo.register(data).pipe(
-      map((res) => this._adapter.adapt(res)),
-      catchError((err) => of(err))
-    );
+    return this._authRepo.register(data)
   }
   excuterForgetPassword(data: object): Observable<any> {
     return this._authRepo.forgetPassword(data);
