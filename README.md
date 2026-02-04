@@ -24,8 +24,7 @@ A comprehensive online examination platform built with Angular, featuring real-t
 - Node.js & Express.js
 - MongoDB
 - JWT Authentication
-- Axios for API calls
-
+- 
 ## 🚀 Getting Started
 
 ### Prerequisites
