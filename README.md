@@ -1,59 +1,98 @@
-# App
+# 📝 Online Exam System
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.8.
+A comprehensive online examination platform built with Angular, featuring real-time countdown timer, question navigation, and automatic submission functionality.
 
-## Development server
+## ✨ Features
 
-To start a local development server, run:
+- 🔐 **Secure Authentication** - JWT-based authentication system
+- ⏱️ **Real-time Timer** - Countdown timer with automatic submission
+- 📋 **Question Navigation** - Easy navigation between questions
+- 💾 **Exam State Persistence** - Save progress and resume later
+- 📊 **Result Tracking** - Instant score calculation and detailed results
+- 🎨 **Responsive Design** - Works seamlessly on all devices
+- 🔔 **Smart Notifications** - Real-time feedback using React Hot Toast
+- ⚡ **Loading States** - Smooth loading experience with NPX Spinner
 
+## 🛠️ Built With
+
+![Angular](https://img.shields.io/badge/Angular_17+-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![RxJS](https://img.shields.io/badge/RxJS-B7178C?style=for-the-badge&logo=reactivex&logoColor=white)
+
+**Backend:**
+- Node.js & Express.js
+- MongoDB
+- JWT Authentication
+- Axios for API calls
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+- Angular CLI
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/mohammedarafaa/online-exam.git
+cd online-exam
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start the development server
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+4. Open your browser and navigate to `http://localhost:4200`
 
-## Code scaffolding
+## 📦 Build
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+To build the project for production:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 🧪 Running Tests
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+## 📱 Screenshots
 
-For end-to-end (e2e) testing, run:
+> Add screenshots of your application here
 
-```bash
-ng e2e
-```
+## 🎯 Key Functionality
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+- **User Authentication**: Secure login/register with JWT tokens
+- **Exam Management**: Start, pause, and submit exams
+- **Question Display**: Clear presentation of questions with multiple choice options
+- **Timer Management**: Automatic submission when time expires
+- **Score Calculation**: Instant results with detailed breakdown
+- **Exam History**: View past exam results and performance
 
-## Additional Resources
+## 👨‍💻 Author
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Mohammed Arafa**
+- GitHub: [@mohammedarafaa](https://github.com/mohammedarafaa)
+- Email: mohammeddarafaa22@gmail.com
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+⭐ If you found this project helpful, please give it a star!
